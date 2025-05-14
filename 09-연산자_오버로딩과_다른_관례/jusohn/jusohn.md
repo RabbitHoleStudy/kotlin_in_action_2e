@@ -199,3 +199,23 @@ class Point(val x: Int, val y: Int) {
 - 표준 라이브러리 함수인 `lazy`를 통해 지연 초기화 프로퍼티를 쉽게 구현할 수 있다.
 - `Delegates.observable` 함수를 사용하면 프로퍼티 변경올 관찰할 수 있는 옵저버를 쉽게 추가할 수 있다.
 - 맵올 위임 객쳬로 사용하는 위임 프로퍼티를 통해 다양한 속성을 제공하는 객체를 유연하게 다룰 수 있다.
+
+## 문제
+
+### 1번
+
+- 복소수를 나타내는 클래스 Complex 에 대해 +, -, \*, / 연산자 오버로딩을 구현해주쇼
+
+```kotlin
+data class Complex(val real: Double, val imag: Double) {
+}
+```
+
+### 2번
+
+- 크기가 다른 Box(val volume: Int) 클래스에 대해 >, <, >=, <= 비교가 가능하도록 compareTo를 구현해주세요
+
+```kotlin
+data class Box(val volume: Int): Comparable<Box> {
+}
+```
