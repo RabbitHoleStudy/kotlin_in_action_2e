@@ -914,7 +914,8 @@ fun takeCareOfCats(cats: Herd<Cat>) {
 - in 키워드를 붙인 경우 -> OK. 정상 동작
 - in 키워드를 붙이지 않은 경우 -> FAIL. 컴파일 에러 (고냥이들이 굶어버림 ㅠㅠ)
     
-    ![image.png](attachment:551e4ce6-80d2-4711-9317-0ede1146addc:image.png)
+    ![image](https://github.com/user-attachments/assets/2cdfd365-e0f8-4b96-b5bc-21548e67f713)
+
     
 
 ## 공변성의 제약
