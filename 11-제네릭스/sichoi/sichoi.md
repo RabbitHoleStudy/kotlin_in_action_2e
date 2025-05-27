@@ -1177,7 +1177,6 @@ fun main() {
     val t: Transformer<Dog, Cat> = object : Transformer<Dog, Cat> {
         override fun transform(value: Dog): Cat = Cat()
     }
-    useTransformer(t)
     
     val result = useTransformer(t, Dog())
 
