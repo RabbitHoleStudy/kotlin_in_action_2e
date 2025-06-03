@@ -365,7 +365,6 @@ object DateSerializer : ValueSerializer<Date> {
     override fun fromJsonValue(jsonValue: Any?): Date = Date(jsonValue as String)
 }
 
-@Target(AnnotationTarget.PROPERTY)
 @Retention(AnnotationRetention.RUNTIME)
 annotation class CustomSerializer(
     val serializerClass: KClass<out ValueSerializer<*>>
