@@ -278,11 +278,13 @@ fun main() {
     - `StringBuilder.()→ Unit`
         
         ![image.png](image.png)
-        
+        ![image](https://github.com/user-attachments/assets/c506b975-b165-46f7-a018-f24395ce9ea9)
+
         - 수신 객체 타입
         
         ![image.png](image%201.png)
-        
+        ![image 1](https://github.com/user-attachments/assets/02d243f9-a1ae-45db-9ab1-07473e61736f)
+
         - 동작 구조
 
 ### 예제2
@@ -321,7 +323,8 @@ fun buildString(builderAction: StringBuilder.() -> Unit): String =
 - apply : 인자로 받은 람다나 함수(여기서는 builderAction)를 호출하면서, 자신의 수신 객체를 람다나 함수의 암시적 수신객체로 사용한다.
     
     ![image.png](image%202.png)
-    
+    ![image 2](https://github.com/user-attachments/assets/18397662-c00b-4455-a612-51356b381070)
+
     - with 와 apply 는 모두 자신이 제공받은 수신 객체를 갖고 확장 함수 타입의 람다를 호출
     - apply는 수신 객체를 암시적 인자(this)로 받는다 → 수신 객체를 return
     - with는 수신 객체를 첫 번째 파라미터로 명시적으로 받는다. → 람다를 호출해 얻은 결과를 return
